@@ -1,8 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;last_opened_file_path&quot;: &quot;C:/dev/Spring-Security-6&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8fe8c7cb-5d1c-4b06-bcb8-289d62e8773f" name="Changes" comment="Organização do projeto">
+      <change beforePath="$PROJECT_DIR$/ms-paciente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/PacienteCommandApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/PacienteCommandApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/aggregates/PacienteAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/aggregates/PacienteAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/client/BuscaEnderecoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/client/BuscaEnderecoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/commands/AlterarPacienteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/commands/AlterarPacienteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/commands/CadastrarPacienteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/commands/CadastrarPacienteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/commands/ExcluirPacienteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/commands/ExcluirPacienteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/config/AxonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/config/AxonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/config/HttpConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/config/HttpConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/controllers/AlterarPacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/controllers/AlterarPacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/controllers/CadastrarPacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/controllers/CadastrarPacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/controllers/ExcluirPacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/controllers/ExcluirPacienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/dto/PacienteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/dto/PacienteResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/events/AlterarPacienteEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/events/AlterarPacienteEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/events/CadastrarPacienteEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/events/CadastrarPacienteEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/events/ExcluirPacienteEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/events/ExcluirPacienteEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/models/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/models/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/models/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/models/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/models/enums/Escolaridade.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/models/enums/Escolaridade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/models/enums/EstadoCivil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/models/enums/EstadoCivil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/cmd/api/models/enums/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/api/models/enums/Genero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/test/java/br/com/helpcsistemas/paciente/cmd/api/PacienteCommandApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/test/java/br/com/helpcsistemas/paciente/api/PacienteCommandApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
+  <component name="ProjectId" id="2TU4aE3IywRTeFowKp1WfYE3McH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/dev/E-store/e-store"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
+      <option name="appName" />
+      <option name="appServicePlanName" />
+      <option name="appServicePlanResourceGroup" />
+      <option name="appSettingsKey" value="a43a98ad-9bc3-4b95-8233-6b5195c317c8" />
+      <option name="artifact" />
+      <option name="debugOptions" />
+      <option name="deployment" />
+      <option name="deploymentStagingDirectoryPath" />
+      <option name="funcPath" />
+      <option name="functionHostArguments" />
+      <option name="hostJsonPath" />
+      <option name="insightsName" />
+      <option name="instrumentationKey" />
+      <option name="javaVersion" />
+      <option name="localSettingsJsonPath" />
+      <option name="moduleName" />
+      <option name="os" />
+      <option name="pricingTier" />
+      <option name="providerMap">
+        <map />
+      </option>
+      <option name="region" />
+      <option name="resourceGroup" />
+      <option name="stagingFolder" />
+      <option name="subscription" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8fe8c7cb-5d1c-4b06-bcb8-289d62e8773f" name="Changes" comment="" />
+      <created>1691084389383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691084389383</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Organização do projeto">
+      <option name="closed" value="true" />
+      <created>1691084508768</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691084508768</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Organização do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organização do projeto" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
 </project>
