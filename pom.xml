@@ -8,12 +8,12 @@
   <packaging>pom</packaging>
 
   <modules>
-
+    <module>ms-paciente</module>
   </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>15</java.version>
+    <java.version>17</java.version>
   </properties>
 
 </project>

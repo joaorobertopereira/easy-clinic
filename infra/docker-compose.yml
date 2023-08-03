@@ -1,0 +1,63 @@
+version: '3.8'
+services:
+  
+  mongodb:
+    container_name: mongo-container
+    image: mongo:latest
+    hostname: mongo-container
+    restart: always
+    volumes:
+      - mongodb-data-container:/data/db
+    networks:
+      - easy-clinic-network
+    ports:
+      - '27017:27017'
+  
+  mysqldb:
+    container_name: mysql-container
+    image: mysql:latest
+    hostname: mysql-container
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      TZ: America/Sao_Paulo
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: admin123
+      MYSQL_DATABASE: bankdb
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_TCP_PORT: 3306
+    ports:
+      - '3306:3306'
+    expose:
+      - 3306
+    networks:
+      - easy-clinic-network
+    volumes:
+      - mysql-data-container:/var/lib/mysql
+
+  axonserver:
+    container_name: axonserver
+    image: axoniq/axonserver:latest
+    hostname: axonserver
+    volumes:
+      - axonserver-data:/data
+      - axonserver-events:/eventdata
+      - axonserver-config:/config:ro
+    ports:
+      - '8024:8024'
+      - '8124:8124'
+      - '8224:8224'
+    networks:
+      - easy-clinic-network
+
+volumes:
+  axonserver-data:
+  axonserver-events:
+  axonserver-config:
+  mongodb-data-container:
+  mysql-data-container:
+
+networks:
+  easy-clinic-network:
+    driver: bridge
