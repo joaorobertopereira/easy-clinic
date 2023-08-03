@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Import;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 @SpringBootApplication
+@EnableResourceServer
+@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class})
 @Import(AxonConfig.class)
 public class PacienteCommandApplication {
 
