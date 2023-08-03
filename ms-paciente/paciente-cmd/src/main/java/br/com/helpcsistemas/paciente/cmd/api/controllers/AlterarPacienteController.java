@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 public class AlterarPacienteController {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
     private final CommandGateway commandGateway;
-
     public AlterarPacienteController(CommandGateway commandGateway) {
         this.commandGateway = commandGateway;
     }
