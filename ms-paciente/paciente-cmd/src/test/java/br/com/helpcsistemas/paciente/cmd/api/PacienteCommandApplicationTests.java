@@ -1,10 +1,10 @@
-package br.com.helpcsistemas.paciente.cmd;
+package br.com.helpcsistemas.paciente.cmd.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PacienteCmdApplicationTests {
+class PacienteCommandApplicationTests {
 
 	@Test
 	void contextLoads() {

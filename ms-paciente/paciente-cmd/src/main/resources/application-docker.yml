@@ -1,0 +1,22 @@
+server:
+  port: 9091
+
+# Mongo DB
+spring:
+  data:
+    mongodb:
+      host: mongo-container
+      port: 27017
+      database: paciente
+
+# Axon Server
+axon:
+  axonserver:
+    servers: axonserver-container:8124
+
+# Security
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: 99137c50b1d3a4ab8720ac92949af871061534caa
