@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: info
+
+api-busca-cep:
+  url: https://viacep.com.br/ws
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
