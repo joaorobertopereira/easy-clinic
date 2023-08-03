@@ -1,0 +1,46 @@
+server:
+  port: 0
+
+# Mongo DB
+spring:
+  application:
+    name: ms-paciente
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: paciente
+
+# Axon Server
+axon:
+  axonserver:
+    servers: localhost:8124
+
+# Security
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: 99137c50b1d3a4ab8720ac92949af871061534caa
+
+# Eureka
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${instanceId:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+logging:
+  level:
+    root: info
+
+# Http Client
+api-busca-cep:
+  url: https://viacep.com.br/ws
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
