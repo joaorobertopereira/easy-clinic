@@ -13,5 +13,4 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 public class ExcluirPacienteCommand {
     @TargetAggregateIdentifier
     private String id;
-
 }

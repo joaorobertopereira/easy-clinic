@@ -35,11 +35,12 @@ public class CadastrarPacienteController {
         String id = UUID.randomUUID().toString();
         command.setId(id);
         try {
-            Endereco endereco = buscaEnderecoService.getEndereco(command.getPaciente().getEndereco().getCep()).block();
-            command.getPaciente().setEndereco(endereco);
+
+            Endereco endereco = buscaEnderecoService.getEndereco(command.getEndereco().getCep());
+            command.setEndereco(endereco);
 
             commandGateway.sendAndWait(command);
-            String mensagem = "Paciente cadastrado com sucesso. ID: "+id;
+            String mensagem = "Paciente cadastrado com sucesso.";
             log.info(mensagem);
             return new ResponseEntity<>(PacienteResponse.builder().id(id).message(mensagem).build(), HttpStatus.CREATED);
         } catch (Exception ex) {

@@ -18,13 +18,11 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "PACIENTE")
 public class Paciente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "paciente_id")
-    private Long id;
+    @Column(unique=true)
+    private String id;
     private String nomeCompleto;
     private Date dtNascimento;
     @CPF
@@ -42,6 +40,8 @@ public class Paciente {
     private String celular;
     @Email
     private String email;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name="endereco_id", referencedColumnName = "id")
     private Endereco endereco;
 
 }
