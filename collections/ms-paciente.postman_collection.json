@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "9861cf33-e11b-4511-8af9-5750b1221ef0",
+		"name": "ms-paciente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2251792"
+	},
+	"item": [
+		{
+			"name": "Cadastrar Paciente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"nomeCompleto\":\"João Roberto de França Pereira\",\r\n    \"dtNascimento\":\"1981-06-30\",\r\n    \"cpf\":\"04661952499\",\r\n    \"genero\":1,\r\n    \"rg\":\"2449231\",\r\n    \"extrangeiro\":false,\r\n    \"naturalidade\":\"Salvador\",\r\n    \"estadoCivil\":2,\r\n    \"altura\":1.69,\r\n    \"peso\":95.00,\r\n    \"profissao\":\"Analista de Sistemas\",\r\n    \"escolaridade\":6,\r\n    \"telefone\":\"n/a\",\r\n    \"celular\":\"83996140278\",\r\n    \"email\":\"joaorobertof@gmail.com\",\r\n    \"endereco\": {\r\n        \"cep\":\"58410460\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/ms-paciente/api/v1/paciente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"ms-paciente",
+						"api",
+						"v1",
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Paciente - Direto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"nomeCompleto\":\"João Roberto de França Pereira\",\r\n    \"dtNascimento\":\"1981-06-30\",\r\n    \"cpf\":\"04661952499\",\r\n    \"genero\":1,\r\n    \"rg\":\"2449231\",\r\n    \"extrangeiro\":false,\r\n    \"naturalidade\":\"Salvador\",\r\n    \"estadoCivil\":2,\r\n    \"altura\":1.69,\r\n    \"peso\":95.00,\r\n    \"profissao\":\"Analista de Sistemas\",\r\n    \"escolaridade\":6,\r\n    \"telefone\":\"n/a\",\r\n    \"celular\":\"83996140278\",\r\n    \"email\":\"joaorobertof@gmail.com\",\r\n    \"endereco\": {\r\n        \"cep\":\"58410460\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9091/api/v1/paciente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9091",
+					"path": [
+						"api",
+						"v1",
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "5137a02f-34d7-44d1-a489-64fbbbab0700",
+		"name": "Servico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2251792"
+	},
+	"item": [
+		{
+			"name": "getEndereco",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://viacep.com.br/ws/58410460/json/",
+					"protocol": "https",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"58410460",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
