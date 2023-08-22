@@ -1,6 +1,19 @@
 version: '3.8'
 services:
-  
+  rabbitmq:
+    container_name: rabbitmq-container
+    hostname: rabbitmq-container
+    image: "rabbitmq:management" # Esta imagem inclui a interface web do RabbitMQ
+    ports:
+      - "5672:5672" # Porta padrão para comunicação AMQP
+      - "15672:15672" # Porta para a interface web do RabbitMQ
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "easy-clinic" # Substitua pela sua própria string de cookie
+    volumes:
+      - "rabbitmq_data:/var/lib/rabbitmq"
+    networks:
+      - easy-clinic-network
+
   mongodb:
     container_name: mongo-container
     image: mongo:latest
@@ -57,6 +70,7 @@ volumes:
   axonserver-config:
   mongodb-data-container:
   mysql-data-container:
+  rabbitmq_data: # Volume para persistência dos dados do RabbitMQ
 
 networks:
   easy-clinic-network:

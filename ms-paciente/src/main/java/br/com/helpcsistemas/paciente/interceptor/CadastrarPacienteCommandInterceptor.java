@@ -34,6 +34,7 @@ public class CadastrarPacienteCommandInterceptor implements MessageDispatchInter
                 CadastrarPacienteCommand cadastrarPacienteCommand = (CadastrarPacienteCommand) command.getPayload();
                 Paciente paciente = repository.findByCpf(cadastrarPacienteCommand.getCpf());
                 if (Objects.nonNull(paciente)) {
+                    log.warn("Paciente já cadastrado. ID encontrado : "+ cadastrarPacienteCommand.getId());
                     throw new IllegalStateException("Paciente já cadastrado. ID encontrado : "+ cadastrarPacienteCommand.getId());
                 }
             }
