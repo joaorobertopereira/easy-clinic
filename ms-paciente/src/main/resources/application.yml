@@ -10,6 +10,12 @@ spring:
       host: localhost
       port: 27017
       database: paciente
+  # RabbitMQ
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   # Mysql
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -48,6 +54,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+# Queue Messenger
+rabbit:
+  queue: easy-clinic-queue
 
 logging:
   level:

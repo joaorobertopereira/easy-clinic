@@ -4,12 +4,12 @@ server:
 # Mongo DB
 spring:
   application:
-    name: ms-paciente
+    name: ms-atendimento
   data:
     mongodb:
       host: mongo-container
       port: 27017
-      database: paciente
+      database: atendimento
 
 # Axon Server
 axon:
@@ -23,21 +23,6 @@ security:
       jwt:
         key-value: 99137c50b1d3a4ab8720ac92949af871061534caa
 
-logging:
-  level:
-    root: info
-    org:
-      axonframework:
-        axonserver:
-          connector:
-            event:
-              axon:
-                AxonServerEventStore: DEBUG
-
-# Http Client
-api-busca-cep:
-  url: https://viacep.com.br/ws
-
 # Eureka
 eureka:
   instance:
@@ -45,9 +30,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"

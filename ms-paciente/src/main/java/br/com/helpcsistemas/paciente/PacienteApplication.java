@@ -4,6 +4,7 @@ import br.com.helpcsistemas.paciente.exception.handler.PacienteEventsErrorHandle
 import br.com.helpcsistemas.paciente.interceptor.CadastrarPacienteCommandInterceptor;
 import org.axonframework.commandhandling.CommandBus;
 import org.axonframework.config.EventProcessingConfigurer;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +15,7 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
+@EnableRabbit
 public class PacienteApplication {
 
 	public static void main(String[] args) {

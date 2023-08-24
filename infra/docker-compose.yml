@@ -5,8 +5,11 @@ services:
     hostname: rabbitmq-container
     image: "rabbitmq:management" # Esta imagem inclui a interface web do RabbitMQ
     ports:
-      - "5672:5672" # Porta padrão para comunicação AMQP
-      - "15672:15672" # Porta para a interface web do RabbitMQ
+      - '5672:5672' # Porta padrão para comunicação AMQP
+      - '15672:15672' # Porta para a interface web do RabbitMQ
+    expose:
+      - 5672
+      - 15672
     environment:
       RABBITMQ_ERLANG_COOKIE: "easy-clinic" # Substitua pela sua própria string de cookie
     volumes:

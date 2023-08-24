@@ -1,4 +1,4 @@
-package br.com.helpcsistemas.msatendimento
+package br.com.helpcsistemas.atendimento
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

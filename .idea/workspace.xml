@@ -4,10 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fe8c7cb-5d1c-4b06-bcb8-289d62e8773f" name="Changes" comment="collections postman">
+    <list default="true" id="8fe8c7cb-5d1c-4b06-bcb8-289d62e8773f" name="Changes" comment="Inclusão do microservico Atendimento">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/config/RabbitMQConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/consumer/MessageReceiver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/controller/NovoAtendimentoController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/dto/AtendimentoResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/dto/PacienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/exceptions/ExceptionResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/exceptions/NotFoundException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/exceptions/handler/ExceptionHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/model/Atendimento.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/producer/MessageSender.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/service/AtendimentoService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-atendimento/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/dto/PacienteDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/mapper/PacienteMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/messager/consumer/RabbitMQConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/messager/producer/RabbitMQProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/service/PacienteQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/service/PacienteQueryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/exception/handler/PacienteErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/exception/handler/PacienteErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/interceptor/CadastrarPacienteCommandInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/interceptor/CadastrarPacienteCommandInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-atendimento/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-atendimento/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/msatendimento/MsAtendimentoApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ms-atendimento/src/main/kotlin/br/com/helpcsistemas/atendimento/AtendimentoApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-atendimento/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-atendimento/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-atendimento/src/test/kotlin/br/com/helpcsistemas/msatendimento/MsAtendimentoApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ms-atendimento/src/test/kotlin/br/com/helpcsistemas/atendimento/MsAtendimentoApplicationTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/PacienteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/java/br/com/helpcsistemas/paciente/PacienteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/resources/application-docker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/resources/application-docker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-paciente/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-paciente/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +46,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -24,6 +54,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ms-atendimento/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ms-paciente/pom.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,18 +80,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/dev/E-store/final/e-store/ProductsService"
+    "last_opened_file_path": "C:/dev/E-store/final/e-store"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.helpcsistemas.paciente.handlers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\Easy-Clinic\easy-clinic\ms-atendimento\src\main\kotlin\br\com\helpcsistemas\msatendimento" />
+      <recent name="C:\dev\Easy-Clinic\easy-clinic\ms-atendimento\src\main\resources" />
       <recent name="C:\dev\Easy-Clinic\easy-clinic\ms-paciente\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.helpcsistemas.atendimento.dto" />
+      <recent name="br.com.helpcsistemas.paciente.dto" />
+      <recent name="br.com.helpcsistemas.paciente.handlers" />
       <recent name="br.com.helpcsistemas.paciente.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PacienteApplication">
+  <component name="RunManager" selected="Kotlin.AtendimentoApplicationKt">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -127,8 +169,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AtendimentoApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.helpcsistemas.atendimento.AtendimentoApplicationKt" />
+      <module name="ms-atendimento" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.AtendimentoApplicationKt" />
         <item itemvalue="Application.PacienteApplication" />
         <item itemvalue="Application.DiscoveryServiceApplication" />
         <item itemvalue="Application.ApiGatewayApplication" />
@@ -176,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691336996306</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Inclusão do microservico Atendimento">
+      <option name="closed" value="true" />
+      <created>1692701800758</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692701800758</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,7 +243,8 @@
     <MESSAGE value="Organização do projeto" />
     <MESSAGE value="Implementação Comando cadastrar paciente." />
     <MESSAGE value="collections postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="collections postman" />
+    <MESSAGE value="Inclusão do microservico Atendimento" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inclusão do microservico Atendimento" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
